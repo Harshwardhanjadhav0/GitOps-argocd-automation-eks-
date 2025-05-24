@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: webapp-argo
+  name: webapp-argo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webapp-argo
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: webapp-argo
+    spec:
+      containers:
+      - image: harshj2003/apache-ip-server
+        name: apache-ip-server
