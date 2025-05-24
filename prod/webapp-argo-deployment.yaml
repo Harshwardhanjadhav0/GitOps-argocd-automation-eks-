@@ -5,7 +5,7 @@ metadata:
     app: webapp-argo
   name: webapp-argo
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
       app: webapp-argo
