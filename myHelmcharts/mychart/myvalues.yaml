@@ -1,5 +1,0 @@
-replicaCount: 2
-image.registry: "harshj2003/apache-ip-server"
-image.tag: "latest"
-service.type: "LoadBalancer"
-service.port: 80
